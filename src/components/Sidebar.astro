@@ -1,0 +1,48 @@
+---
+const links: { link: string; content: string }[] = [
+    {
+        link: "/",
+        content: "home",
+    },
+    {
+        link: "/book",
+        content: "guestbook",
+    },
+    {
+        link: "https://bsky.app/profile/flvffywvffy.bsky.social",
+        content: "bluesky",
+    },
+    {
+        link: "xmpp:marcus@xmpp.earth",
+        content: "xmpp",
+    },
+    {
+        link: "https://github.com/marcusleonas",
+        content: "github",
+    },
+    {
+        link: "https://myanimelist.net/profile/flvffywvffy",
+        content: "mal",
+    },
+];
+---
+
+<aside>
+    <article>
+        <h4 class="mt-none">links</h4>
+        <ul class="links">
+            {
+                links.map((link) => (
+                    <li>
+                        <a href={link.link}>{link.content}</a>
+                    </li>
+                ))
+            }
+        </ul>
+    </article>
+    <article>
+        <h4 class="mt-none">commissions</h4>
+        <p>commissions and shop is now open on my kofi!</p>
+        <a href="https://ko-fi.com/flvffywvffy">View Ko-Fi</a>
+    </article>
+</aside>

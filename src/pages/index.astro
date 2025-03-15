@@ -1,11 +1,74 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="home - flvffywvffy's site">
+    <article>
+        <p>
+            hello and welcome to
+            <a href="https://flvffywvffy.neocities.org"
+                >flvffywvffy.neocities.org</a
+            >! i made this website mostly for fun as i haven't written html &
+            css for a while, and to dump anything i find interesting and want to
+            share with the world lol. i also create stream overlays and sell
+            them on ko-fi.
+        </p>
+
+        <!-- About section -->
+        <h2>about</h2>
+
+        <div class="basics">
+            <h3>basics</h3>
+            <ul>
+                <li>name: marcus</li>
+                <li>gender: male</li>
+                <li>programming languages: typescript, golang, python</li>
+                <li>frameworks & libraries: svelte, react, astro, nextjs</li>
+            </ul>
+        </div>
+
+        <div class="blurb">
+            <h3>blurb</h3>
+            <p>
+                professionally i am a lighting designer, but i like to develop
+                websites using nextjs, and make apps in golang when bored. i
+                also occasionally create pixel & vector art if i feel like it.
+            </p>
+        </div>
+
+        <div class="hobbies">
+            <h3>hobbies</h3>
+            <ul class="pt-sm">
+                <li>watching anime</li>
+                <li>reading</li>
+                <li>developing</li>
+            </ul>
+        </div>
+
+        <!--
+    <div class="creations">
+      <h3>creations</h3>
+      <ul class="pt-sm">
+        <li>
+          <a href="https://status.flvffy.top"
+            >https://status.flvffy.top</a
+          >
+          - dynamic status
+        </li>
+      </ul>
+    </div>-->
+
+        <!-- Contact Section -->
+        <h2>contact</h2>
+        <p>
+            you can message me via <a href="xmpp:marcus@xmpp.earth">xmpp</a>,
+            <a href="https://bsky.app/profile/flvffywvffy.bsky.social"
+                >bluesky</a
+            >, and <a href="mailto:flvffywvffy@gmail.com">email</a>. note that i
+            am not good with replying to my emails so send me a message on xmpp
+            or bluesky if you really want a reply :3
+        </p>
+
+        <!-- <div style="padding-bottom: 150vh"></div> -->
+    </article>
 </Layout>

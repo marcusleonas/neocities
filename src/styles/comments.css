@@ -1,0 +1,71 @@
+#HCB_comment_box {
+    font-family: "Sour Gummy", sans-serif !important;
+}
+
+#HCB_comment_box > h3 {
+    display: none;
+}
+
+#HCB_comment_box .submit,
+#HCB_comment_box .btn,
+#HCB_comment_box #hcb_form_content,
+#HCB_comment_box #hcb_form_email,
+#HCB_comment_box #hcb_form_name,
+#HCB_comment_box #hcb_form_website {
+    background: #fff !important; /* Clear twitter bootstrap style. */
+
+    color: black !important;
+
+    border: var(--border-size) solid var(--border-colour) !important;
+    border-radius: var(--border-radius) !important;
+
+    font-size: 14px !important;
+    font-family: "Sour Gummy", sans-serif !important;
+}
+
+#HCB_comment_box .submit,
+#HCB_comment_box .btn {
+    cursor: url(/images/cursor-pointer.png), auto;
+}
+
+#HCB_comment_box .submit:hover,
+#HCB_comment_box .btn:hover {
+    background: var(--border-colour) !important;
+}
+
+#HCB_comment_box #hcb_form_website {
+    padding: 8px;
+}
+
+#hcb_form_name,
+#hcb_form_website {
+    display: inline-block;
+    float: left;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    margin-right: 5px !important;
+    width: 44%;
+}
+
+#HCB_comment_box #comments_list .comment {
+    border-top: var(--border-size) dotted var(--border-colour) !important;
+    padding-bottom: 10px;
+}
+
+#HCB_comment_box #comments_list .comment .hcb-comment-tb button {
+    font-family: "Sour Gummy", sans-serif;
+    color: var(--link-colour) !important;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 250ms !important;
+
+    &:visited {
+        color: var(--link-colour) !important;
+    }
+
+    &:hover {
+        color: var(--link-hover-colour) !important;
+    }
+}
+
+#HCB_comment_box .comment {
+    margin-bottom: 0 !important;
+}
