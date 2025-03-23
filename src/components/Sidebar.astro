@@ -1,48 +1,79 @@
 ---
 const links: { link: string; content: string }[] = [
-    {
-        link: "/",
-        content: "home",
-    },
-    {
-        link: "/book",
-        content: "guestbook",
-    },
-    {
-        link: "https://bsky.app/profile/flvffywvffy.bsky.social",
-        content: "bluesky",
-    },
-    {
-        link: "xmpp:marcus@xmpp.earth",
-        content: "xmpp",
-    },
-    {
-        link: "https://github.com/marcusleonas",
-        content: "github",
-    },
-    {
-        link: "https://myanimelist.net/profile/flvffywvffy",
-        content: "mal",
-    },
+  {
+    link: "/",
+    content: "home",
+  },
+  {
+    link: "/book",
+    content: "guestbook",
+  },
+  {
+    link: "https://bsky.app/profile/flvffywvffy.bsky.social",
+    content: "bluesky",
+  },
+  {
+    link: "xmpp:marcus@xmpp.earth",
+    content: "xmpp",
+  },
+  {
+    link: "https://github.com/marcusleonas",
+    content: "github",
+  },
+  {
+    link: "https://myanimelist.net/profile/flvffywvffy",
+    content: "mal",
+  },
 ];
 ---
 
 <aside>
-    <article>
-        <h4 class="mt-none">links</h4>
-        <ul class="links">
-            {
-                links.map((link) => (
-                    <li>
-                        <a href={link.link}>{link.content}</a>
-                    </li>
-                ))
-            }
-        </ul>
-    </article>
-    <article>
-        <h4 class="mt-none">commissions</h4>
-        <p>commissions and shop is now open on my kofi!</p>
-        <a href="https://ko-fi.com/flvffywvffy">View Ko-Fi</a>
-    </article>
+  <article>
+    <h4 class="mt-none">links</h4>
+    <ul class="links">
+      {
+        links.map((link) => (
+          <li>
+            <a href={link.link}>{link.content}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </article>
+  <article>
+    <h4 class="mt-none">commissions</h4>
+    <p>commissions and shop is now open on my kofi!</p>
+    <a href="https://ko-fi.com/flvffywvffy">View Ko-Fi</a>
+  </article>
+  <article>
+    <h4 class="mt-none">status/presence</h4>
+    <div id="fp-box">
+      <p id="fp-msg">Loading...</p>
+      <div id="fp-meta">
+        <a id="fp-author" href="#" target="_blank">Loading...</a>
+        <p>&bull;</p>
+        <p id="fp-date">Loading...</p>
+      </div>
+    </div>
+    <script is:inline>
+      function getPresence() {
+        const fpBox = document.querySelector("#fp-box");
+        const fpMsg = fpBox?.querySelector("#fp-msg");
+        const fpAuthor = fpBox?.querySelector("#fp-author");
+        const fpDate = fpBox?.querySelector("#fp-date");
+
+        fetch("https://presence.flvffy.top/api/presence/flvffywvffy")
+          .then((res) => res.json())
+          .then((body) => {
+            fpMsg.innerHTML = body["presence"];
+            fpDate.innerHTML = body["prettyDate"];
+
+            fpAuthor.innerHTML = body["author"];
+            fpAuthor.href = `https://presence.flvffy.top/users/${body["author"]}`;
+          })
+          .catch((error) => console.error(error));
+      }
+      getPresence();
+    </script>
+  </article>
 </aside>
