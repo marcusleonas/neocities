@@ -8,6 +8,10 @@ export const buttons: Button[] = [
 
 export const extButtons: Button[] = [
     {
+        src: "https://file.garden/aXdBx1DU1BidR1It/conehead%20webring%20found%20heaven%2088x31.png",
+        href: "https://coneheads.netlify.app",
+    },
+    {
         src: "https://lazer-bunny.neocities.org/Art_Storage/Pixel_Art/Button_88x31.gif",
         href: "https://lazer-bunny.neocities.org",
     },
