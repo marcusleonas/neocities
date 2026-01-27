@@ -22,4 +22,8 @@ export const extButtons: Button[] = [
         src: "/images/buttons/cozyghosty25.png",
         href: "https://cozyghostly.neocities.org/link",
     },
+    {
+        src: "https://file.garden/ZrZSgsrYfQXsO7QH/buttons/lockheartlove_button.png",
+        href: "http://lockheart.love",
+    },
 ]
