@@ -1,0 +1,70 @@
+---
+const { username, apiKey } = Astro.props;
+---
+
+<div id="last-fm-widget" class="last-fm-container">
+    <div id="track-card" class="track-card hidden">
+        <img id="track-art" src="" alt="Album Art" />
+        <div class="track-info">
+            <p id="status-text" class="status"></p>
+            <a id="track-link" href="#" target="_blank">
+                <strong id="track-title"></strong>
+            </a>
+            <span id="track-artist"></span>
+        </div>
+    </div>
+    <div id="loading-state">Loading tunes...</div>
+</div>
+
+<script define:vars={{ username, apiKey }}>
+    async function updateLastFm() {
+        const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json&limit=1`;
+
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
+            const track = data.recenttracks.track[0];
+
+            if (!track) return;
+
+            const isPlaying = track["@attr"]?.nowplaying === "true";
+
+            // Update DOM elements
+            document.getElementById("track-art").src =
+                track.image[2]["#text"] || "placeholder.png";
+            document.getElementById("track-title").innerText = track.name;
+            document.getElementById("track-artist").innerText =
+                track.artist["#text"];
+            document.getElementById("track-link").href = track.url;
+            document.getElementById("status-text").innerText = isPlaying
+                ? "Currently Playing"
+                : "Last Listened To";
+
+            // Show card, hide loading
+            document.getElementById("track-card").classList.remove("hidden");
+            document.getElementById("loading-state").classList.add("hidden");
+        } catch (error) {
+            console.error("Last.fm error:", error);
+            document.getElementById("loading-state").innerText =
+                "Couldn't load music :(";
+        }
+    }
+
+    // Run on load
+    updateLastFm();
+</script>
+
+<style>
+    .hidden {
+        display: none;
+    }
+    .track-card {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    #track-art {
+        width: 50px;
+        height: 50px;
+    }
+</style>
