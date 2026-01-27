@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import PageLayout from "../layouts/PageLayout.astro";
+import { images } from "../data/images";
+
+---
+
+<BaseLayout title="pics">
+    <PageLayout>
+        <div>
+            <h1>pictures</h1>
+            <div class="gallery" style="max-height: 500px; overflow-y: scroll;">
+				{images.map((image) => <img src={image.src} alt={image.alt} />)}
+			</div>
+        </div>
+    </PageLayout>
+</BaseLayout>

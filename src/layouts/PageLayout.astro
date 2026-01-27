@@ -1,0 +1,16 @@
+---
+import Header from "../components/Header.astro";
+import Sidebar from "../components/Sidebar.astro";
+---
+
+<div class="wrapper">
+    <Header />
+    <div class="content">
+        <aside>
+            <Sidebar />
+        </aside>
+        <section class="container">
+            <slot />
+        </section>
+    </div>
+</div>

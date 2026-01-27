@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+
+import "../styles/links.css";
+
+import { buttons, extButtons } from "../data/buttons";
+---
+
+<BaseLayout title="links">
+    <PageLayout>
+        <h1>buttons & links</h1>
+
+        <h3>my button</h3>
+        <p>lmk if you add me and i'll put you here!</p>
+        <img src="/images/buttons/n3bulasforest.gif" alt="my button!">
+        <textarea readonly cols="50">
+            <a href="https://n3bulaxo.neocities.org"><img src="https://n3bulaxo.neocities.org/images/buttons/n3bulasforest.gif" alt="n3bula's forest"></a>
+        </textarea>
+
+        <h3>general/cool buttons</h3>
+        <div class="buttons">
+            {
+                buttons.map((button) => {
+                    if (button.href) {
+                        return (
+                            <a href={button.href}>
+                                <img src={button.src} />
+                            </a>
+                        );
+                    } else {
+                        return <img src={button.src} />;
+                    }
+                })
+            }
+        </div>
+
+
+        <h3>some people/websites i find cool!</h3>
+        <div class="buttons">
+            {
+                extButtons.map((button) => {
+                    if (button.href) {
+                        return (
+                            <a href={button.href}>
+                                <img src={button.src} />
+                            </a>
+                        );
+                    } else {
+                        return <img src={button.src} />;
+                    }
+                })
+            }
+        </div>
+
+        <p>webrings are in the sidebar.</p>
+    </PageLayout>
+</BaseLayout>

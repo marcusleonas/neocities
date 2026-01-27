@@ -1,0 +1,34 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+
+import { images } from "../data/images";
+const imgs = images.slice(0, 3);
+---
+
+<BaseLayout title="welcome">
+	<PageLayout>
+		<h2>WEBSITE WIP!!</h2>
+
+		<div>
+			<p>
+				hey and welcome! i made this site to have a home for some
+				ramblings and other stuff & a place to express myself online! i
+				apologise in advance for the dump of info T-T
+			</p>
+		</div>
+		<div>
+			<h2>latest pictures</h2>
+			<div class="gallery">
+				{imgs.map((image) => <img src={image.src} alt={image.alt} />)}
+			</div>
+		</div>
+		<div>
+			<h2>socials</h2>
+			<p>
+				email: wishbone@posteo.uk<br />insta: wishbxnesclxvrs | tiktok:
+				wishbxnes
+			</p>
+		</div>
+	</PageLayout>
+</BaseLayout>
