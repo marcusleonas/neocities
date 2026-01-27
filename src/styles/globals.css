@@ -162,6 +162,11 @@ article ul {
     padding-left: 15px;
 }
 
+.webrings {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
 @media screen and (max-width: 820px) {
     .wrapper {
         max-width: none;
