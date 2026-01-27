@@ -50,8 +50,14 @@ a:hover {
     padding: 15px;
 }
 
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 aside div.container {
-    padding: 10px;
+    padding: 5px;
 }
 
 .wrapper {
