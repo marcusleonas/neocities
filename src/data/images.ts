@@ -2,6 +2,14 @@ interface GalleryImage { src: string; alt: string };
 
 export const rawImages: GalleryImage[] = [
     {
+        src: "https://file.garden/aXdBx1DU1BidR1It/lithuania%202025%2002%20(1).jpg",
+        alt: "latvia trip 2025",
+    },
+    {
+        src: "https://file.garden/aXdBx1DU1BidR1It/lithuania%202025%2001%20(1).jpg",
+        alt: "lithuania trip 2025",
+    },
+    {
         src: "https://file.garden/aXdBx1DU1BidR1It/25-01-2026%2001.jpg",
         alt: "seven sisters cliffs, england",
     },
@@ -17,13 +25,6 @@ export const rawImages: GalleryImage[] = [
         src: "https://file.garden/aXdBx1DU1BidR1It/my%20car.jpg",
         alt: "our tuxedo cat, cookie",
     },
-    {
-        src: "https://file.garden/aXdBx1DU1BidR1It/lithuania%202025%2001%20(1).jpg",
-        alt: "lithuania trip 2025",
-    },
-    {
-        src: "https://file.garden/aXdBx1DU1BidR1It/lithuania%202025%2002%20(1).jpg",
-        alt: "latvia trip 2025",
-    },
+
 ];
 export const images = rawImages.reverse();
