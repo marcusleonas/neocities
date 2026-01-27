@@ -1,6 +1,6 @@
 interface GalleryImage { src: string; alt: string };
 
-export const images: GalleryImage[] = [
+export const rawImages: GalleryImage[] = [
     {
         src: "https://file.garden/aXdBx1DU1BidR1It/25-01-2026%2001.jpg",
         alt: "seven sisters cliffs, england",
@@ -26,3 +26,4 @@ export const images: GalleryImage[] = [
         alt: "latvia trip 2025",
     },
 ];
+export const images = rawImages.reverse();
