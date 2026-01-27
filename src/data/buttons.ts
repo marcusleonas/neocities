@@ -2,9 +2,6 @@ interface Button { src: string; href?: string };
 
 export const buttons: Button[] = [
     {
-        src: "/images/buttons/Censor_14c.gif"
-    },
-    {
         src: "/images/buttons/gay.png",
     }
 ]
