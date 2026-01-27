@@ -25,6 +25,10 @@ export const rawImages: GalleryImage[] = [
         src: "https://file.garden/aXdBx1DU1BidR1It/my%20car.jpg",
         alt: "our tuxedo cat, cookie",
     },
+    {
+        src: "https://file.garden/aXdBx1DU1BidR1It/cookie%20in%20grass.jpg",
+        alt: "tuxedo cat, cookie, hiding in the grass",
+    },
 
 ];
 export const images = rawImages.reverse();
