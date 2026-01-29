@@ -207,10 +207,12 @@ td.interest-title {
     padding-right: 20px;
 }
 
-.webrings {
+.webrings,
+.updates {
     max-height: 200px;
     overflow-y: auto;
 }
+
 
 @media screen and (max-width: 900px) {
     .wrapper {
