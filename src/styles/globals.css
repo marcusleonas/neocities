@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Mystery+Quest&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Mystery+Quest&display=swap");
 
 :root {
     --light-green: #eaf0d1;
@@ -50,7 +50,9 @@ a:hover {
 }
 
 .container {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(/images/bark.jpg) repeat;
+    background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url(/images/bark.jpg) repeat;
     /* border: 5px solid var(--dark-green); */
     padding: 15px;
 }
@@ -87,7 +89,9 @@ header {
     padding: 30px;
     text-align: center;
 
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/forest.jpg);
+    background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(/images/forest.jpg);
     background-size: cover;
     /* border: 5px solid var(--dark-green); */
 }
@@ -106,7 +110,7 @@ header h1 {
     padding-top: 5px;
 }
 
-.content section.container>div:not(:nth-child(1)):not(.buttons) {
+.content section.container > div:not(:nth-child(1)):not(.buttons) {
     padding-top: 15px;
 }
 
@@ -182,7 +186,7 @@ header h1 {
     padding-left: 15px;
 }
 
-article ul {
+ul {
     padding-left: 35px;
 }
 
@@ -215,7 +219,6 @@ td.interest-title {
     max-height: 200px;
     overflow-y: auto;
 }
-
 
 @media screen and (max-width: 900px) {
     .wrapper {
