@@ -32,3 +32,15 @@ export const rawImages: GalleryImage[] = [
 
 ];
 export const images = rawImages.reverse();
+
+const rawArt: GalleryImage[] = [
+    {
+        src: "https://file.garden/aXdBx1DU1BidR1It/CG%20Wishbone%20Poster.png",
+        alt: "Conan Gray - Wishbone Poster"
+    },
+    {
+        src: "https://file.garden/aXdBx1DU1BidR1It/Charli%20XCX%20Brat%20Poster.png",
+        alt: "Charli XCX - Brat Poster"
+    },
+];
+export const art = rawArt.reverse();

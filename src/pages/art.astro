@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+import { art } from "../data/images";
+---
+
+<BaseLayout title="artwork">
+    <PageLayout>
+        <div>
+            <h1>artwork</h1>
+            <p>
+                i'm trying to get back into graphic design. here are some things
+                i've recently made! feel free to use them however you like, but
+                please give credit & don't reupload them anywhere!
+            </p>
+            <p style="padding-bottom: 10px;">
+                click an image to view it in fullscreen! (note: they may take a
+                while to load on a bad internet connection, the files are quite
+                big!)
+            </p>
+            <div class="gallery" style="max-height: 500px; overflow-y: scroll;">
+                {
+                    art.map((image) => (
+                        <div>
+                            <a href={image.src} target="_blank">
+                                <img src={image.src} alt={image.alt} />
+                            </a>
+                            <p>{image.alt}</p>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </PageLayout>
+</BaseLayout>
