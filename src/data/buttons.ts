@@ -3,10 +3,7 @@ interface Button { src: string; href?: string };
 export const buttons: Button[] = [
     {
         src: "/images/buttons/gay.png",
-    }
-]
-
-export const extButtons: Button[] = [
+    },
     {
         src: "https://file.garden/aXdBx1DU1BidR1It/conehead%20webring%20found%20heaven%2088x31.png",
         href: "https://coneheads.netlify.app",

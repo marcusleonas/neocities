@@ -1,120 +1,116 @@
----
-import CurrentSong from "./CurrentSong.astro";
----
-
-<div class="container sb">
+<div class="sb">
     <nav class="links">
         <a href="/">home</a>
         <a href="/about">about</a>
         <a href="/art">art</a>
         <a href="/pics">pictures</a>
         <a href="/blog">blog</a>
-        <a href="/links">links</a>
+        <a href="https://wishbxnes.carrd.co">links</a>
         <a href="https://wishbone.atabook.org/">guestbook</a>
     </nav>
 </div>
-<div class="container sb webrings">
-    <h3>webrings</h3>
-    <!-- conehead webring -->
-    <div>
-        <a
-            href="https://coneheads.netlify.app/redirect.html?to=prev&name=n3bula"
-            target="_top">&larr;</a
-        >
-        <a href="https://coneheads.netlify.app" target="_blank"
-            >conehead webring</a
-        >
-        <a
-            style="font-size:60%"
-            href="https://coneheads.netlify.app/redirect.html?to=random&name=n3bula"
-            target="_top">(rand)</a
-        >
-        <a
-            href="https://coneheads.netlify.app/redirect.html?to=next&name=n3bula"
-            target="_top">&rarr;</a
-        >
-    </div>
+<hr />
+<div class="sb">
+    <h3>Web Rings</h3>
 
-    <!-- webmaster webring -->
-    <div>
-        <a href="https://webmasterwebring.netlify.app?n3bula-previous">&larr;</a
+   <div class="webrings">
+       <div style="display:flex;flex-direction:row;align-items:center;gap:2px;font-family:sans-serif;"><a href="https://coneheads.netlify.app/redirect.html?to=prev&name=n3bula" target="_top" style="font-size:18px;text-decoration:none;color:#477eb1;font-weight:bold;padding:0 5px;">←</a><a href="https://coneheads.netlify.app" target="_blank" style="font-size:18px;text-decoration:none;color:#477eb1;font-weight:bold;padding:0 5px;"><img src="https://file.garden/aXdBx1DU1BidR1It/conehead%20webring%2088x31.png" alt="conehead webring" style="display:block;width:88px;height:31px;image-rendering:pixelated;" /></a><a href="https://coneheads.netlify.app/redirect.html?to=random&name=n3bula" target="_top" style="font-size:18px;text-decoration:none;color:#477eb1;font-weight:bold;padding:0 5px;">?</a><a href="https://coneheads.netlify.app/redirect.html?to=next&name=n3bula" target="_top" style="font-size:18px;text-decoration:none;color:#477eb1;font-weight:bold;padding:0 5px;">→</a></div>
+       
+        <!-- webmaster webring -->
+        <map name="badge-wwstamp">
+            <area
+                shape="rect"
+                coords="66,38,79,49"
+                href="https://webmasterwebring.netlify.app?YOURSLUG-previous"
+                alt="Previous"
+            />
+            <area
+                shape="rect"
+                coords="78,29,90,40"
+                href="https://webmasterwebring.netlify.app?YOURSLUG-next"
+                alt="Next"
+            />
+            <area
+                shape="rect"
+                coords="13,15,63,47"
+                href="https://webmasterwebring.netlify.app"
+                alt="Webmaster Webring"
+            />
+        </map>
+        <img
+            usemap="#badge-wwstamp"
+            id="ww-stamp"
+            src="https://file.garden/ZrZSgsrYfQXsO7QH/ww/stamp.png"
+            alt="Webmaster Webring"
+            width="99"
+            height="56"
+        />
+        <!-- bucket webring -->
+        <div>
+            <a
+                href=" https://webring.bucketfish.me/redirect.html?to=prev&name=n3bula"
+                >&larr;</a
+            >
+            <a href="https://webring.bucketfish.me">bucket webring</a>
+            <a
+                href="https://webring.bucketfish.me/redirect.html?to=random&name=n3bula"
+                >?</a
+            >
+            <a
+                href="https://webring.bucketfish.me/redirect.html?to=next&name=n3bula"
+                >&rarr;</a
+            >
+        </div>
+        <!-- yaoi/yuri webring -->
+        <div
+            style="
+         background-image:
+         linear-gradient(to top,#000,#00000000),
+         url('https://www.virtuagirl.net/STORAGEROOM/xxxholic.png');
+         /* upload your image or use the preuploaded one :- ) */
+         background-size:cover;
+         display:grid;
+         height:100px;
+         width:200px;
+         color:#fff;
+         font-family:'Times New Roman';
+         font-size:18px"
         >
-        <a href="https://webmasterwebring.netlify.app">Webmaster Webring</a>
-        <a href="https://webmasterwebring.netlify.app?n3bula-random">?</a>
-        <a href="https://webmasterwebring.netlify.app?n3bula-next">&rarr;</a>
-    </div>
-
-    <!-- bucket webring -->
-    <div>
-        <a
-            href=" https://webring.bucketfish.me/redirect.html?to=prev&name=n3bula"
-            >&larr;</a
-        >
-        <a href="https://webring.bucketfish.me">bucket webring</a>
-        <a
-            href="https://webring.bucketfish.me/redirect.html?to=random&name=n3bula"
-            >?</a
-        >
-        <a
-            href="https://webring.bucketfish.me/redirect.html?to=next&name=n3bula"
-            >&rarr;</a
-        >
-    </div>
-
-    <!-- yaoi/yuri webring -->
-    <div style="width:200px;">
-        <a href="https://www.virtuagirl.net/webring.htm#NBL0">&larr;</a>
-        <a href="https://www.virtuagirl.net/yuriwebring">YAOI WEBRING</a>
-        <a href="https://www.virtuagirl.net/webring.htm#NBL1">&rarr;</a>
-    </div>
-
-    <!-- no ai webring -->
-    <div>
-        <a href="https://baccyflap.com/noai/?prv&s=nbl" target="_top">&larr;</a>
-        <a href="https://baccyflap.com/noai" target="_blank">no ai webring</a>
-        <a
-            style="font-size:60%"
-            href="https://baccyflap.com/noai/?rnd"
-            target="_top">(rand)</a
-        >
-        <a href="https://baccyflap.com/noai/?nxt&s=nbl" target="_top">&rarr;</a>
-    </div>
-
-    <!-- ssg webring -->
-    <div>
-        <a
-            href="https://jbc.lol/webrings/ssgring/redirect?slug=n3bula&way=prev"
-            target="_top">&larr;</a
-        >
-        <a href="https://jbc.lol/webrings/ssgring" target="_blank">ssg ring</a>
-        <a
-            style="font-size:60%"
-            href="https://jbc.lol/webrings/ssgring/redirect?way=rand"
-            target="_top">(rand)</a
-        >
-        <a
-            href="https://jbc.lol/webrings/ssgring/redirect?slug=n3bula&way=next"
-            target="_top">&rarr;</a
-        >
-    </div>
+            <span
+                style="display:inline-block;align-self:end;justify-self:center;text-align:center"
+            >
+                <a
+                    style="text-decoration:none;color:#fff"
+                    href="https://www.virtuagirl.net/webring.htm#nbl0">⇐</a
+                >
+                <!-- REPLACE "nbl" WITH /YOUR/ IDENTIFIER-->
+                <a
+                    style="text-decoration:none;color:#fff"
+                    href="https://www.virtuagirl.net/yuriwebring">YAOI WEBRING</a
+                >
+                <a
+                    style="text-decoration:none;color:#fff"
+                    href="https://www.virtuagirl.net/webring.htm#nbl1">⇒</a
+                >
+                <!-- REPLACE "nbl" WITH /YOUR/ IDENTIFIER-->
+            </span>
+        </div>
+        <!-- no ai webring -->
+        <map name="noaimini0b">
+            <area href="https://baccyflap.com/noai" target="_blank" shape="rect" coords="32,4,142,56" alt="no ai webring" title="no ai webring" />
+            <area href="https://baccyflap.com/noai/?prv&s=nbl" target="_top" shape="rect" coords="4,18,26,42" alt="previous" title="previous" />
+            <area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="158,44,170,56" alt="random" title="random" />
+            <area href="https://baccyflap.com/noai/?nxt&s=nbl" target="_top" shape="rect" coords="148,18,170,42" alt="next" title="next" />
+        </map>
+        <img style="width:176px;image-rendering:pixelated" usemap="#noaimini0b" src="https://baccyflap.com/noai/miniwidget0.gif" alt="an image of a little blue toy robot in a red circle. there's a red line running through the robot. around it are the words NO AI / WEBRING and two arrows, one pointing left, one right, and a little icon with two crossed arrows" />
+   </div>
 </div>
-<div class="container sb">
-    <CurrentSong
-        apiKey="e2d0537b6c5434b59650b050e80671da"
-        username="marcusleonas"
-    />
-</div>
-<div class="container sb">
-    <div id="statuscafe">
-        <div id="statuscafe-username">loading...</div>
-        <div id="statuscafe-content">loading...</div>
-    </div>
-    <script src="https://status.cafe/current-status.js?name=n3bula" defer
-    ></script>
-</div>
-<div class="container sb">
-    <h3>say hi!</h3>
-    <div class="chatbox" style="height: 200px;">
+
+<hr />
+
+<div class="sb">
+    <h3>Chatbox <em>(say hi!)</em></h3>
+    <div class="chatbox" style="height: 250px;">
         <iframe
             src="https://www5.cbox.ws/box/?boxid=960927&boxtag=aOQMtI"
             width="100%"

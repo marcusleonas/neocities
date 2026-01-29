@@ -1,6 +1,8 @@
 ---
+import CurrentSong from "../components/CurrentSong.astro";
 import Header from "../components/Header.astro";
 import Sidebar from "../components/Sidebar.astro";
+import { buttons } from "../data/buttons";
 ---
 
 <div class="wrapper">
@@ -12,5 +14,63 @@ import Sidebar from "../components/Sidebar.astro";
         <section class="container">
             <slot />
         </section>
+        <aside class="right">
+            <div class="sb">
+                <h3>Status</h3>
+                <div id="statuscafe">
+                    <div id="statuscafe-username">loading...</div>
+                    <div id="statuscafe-content">loading...</div>
+                </div>
+                <script
+                    src="https://status.cafe/current-status.js?name=n3bula"
+                    defer
+                ></script>
+            </div>
+            <hr />
+            <div class="sb">
+                <CurrentSong
+                    apiKey="e2d0537b6c5434b59650b050e80671da"
+                    username="marcusleonas"
+                />
+            </div>
+            <hr />
+            <div>
+                <h3>Visitor Count</h3>
+                <script
+                    type="text/javascript"
+                    src="https://counter.websiteout.com/js/5/0/915/1"
+                ></script>
+            </div>
+            <hr />
+            <div>
+                <h3>Buttons</h3>
+                <div class="buttons">
+                    {
+                        buttons.map((button) => {
+                            if (button.href) {
+                                return (
+                                    <a href={button.href}>
+                                        <img src={button.src} />
+                                    </a>
+                                );
+                            } else {
+                                return <img src={button.src} />;
+                            }
+                        })
+                    }
+                </div>
+                <p>Add my button (hotlinking ok)!</p>
+                <a href="https://n3bulaxo.neocities.org"
+                    ><img
+                        src="https://file.garden/aXdBx1DU1BidR1It/forest_88x31.gif"
+                    />
+                </a>
+                <textarea style="width:100%;" readonly>
+                    <a href="https://n3bulaxo.neocities.org"><img
+                    src="https://file.garden/aXdBx1DU1BidR1It/forest_88x31.gif"
+                    /></a>
+                </textarea>
+            </div>
+        </aside>
     </div>
 </div>
