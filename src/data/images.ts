@@ -42,5 +42,9 @@ const rawArt: GalleryImage[] = [
         src: "https://file.garden/aXdBx1DU1BidR1It/Charli%20XCX%20Brat%20Poster.png",
         alt: "Charli XCX - Brat Poster"
     },
+    {
+        src: "https://file.garden/aXdBx1DU1BidR1It/CG%20Superache%20Poster.png",
+        alt: "Conan Gray - Superache Poster"
+    },
 ];
 export const art = rawArt.reverse();
