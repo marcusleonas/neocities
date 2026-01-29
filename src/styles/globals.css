@@ -152,7 +152,10 @@ header h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10px 10px;
+    padding: 10px;
+
+    justify-content: center;
+    align-items: center;
 
     max-height: 300px;
     overflow-y: auto;
