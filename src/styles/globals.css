@@ -232,6 +232,19 @@ td.interest-title {
     right: 0;
 }
 
+.fanlistings {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    max-height: 100px;
+    overflow-y: auto;
+    background: var(--brown);
+}
+
 @media screen and (max-width: 900px) {
     .wrapper {
         max-width: none;
