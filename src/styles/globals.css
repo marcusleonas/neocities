@@ -23,6 +23,11 @@ hr {
     margin: 10px 0;
 }
 
+.updates hr {
+    border: 1px solid var(--brown);
+    margin: 5px 0;
+}
+
 h1,
 h2,
 h3,
