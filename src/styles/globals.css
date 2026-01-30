@@ -214,6 +214,13 @@ td.interest-title {
     overflow-y: auto;
 }
 
+.blinkies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
 .cat-1 {
     position: fixed;
     bottom: 0;
