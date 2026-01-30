@@ -214,6 +214,17 @@ td.interest-title {
     overflow-y: auto;
 }
 
+.cat-1 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.cat-2 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
 @media screen and (max-width: 900px) {
     .wrapper {
         max-width: none;
