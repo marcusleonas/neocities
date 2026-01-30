@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+---
+
+<BaseLayout title="cliques">
+    <PageLayout>
+        <h1>Cliques</h1>
+        <p>
+            All the cliques I'm in are in the right sidebar. Below are some
+            cliques I have created!
+        </p>
+
+        <hr />
+
+        <div>
+            <p>
+                <a href="https://n3bula.lol/cliques"
+                    ><strong>TGCF Clique</strong></a
+                > // Shi Qingxuan
+            </p>
+            <textarea readonly>
+                {
+                    `<p>
+  <a href="https://n3bula.lol/cliques"
+      ><strong>TGCF Clique</strong></a
+  > // Your Favourite Character
+</p>`
+                }
+            </textarea>
+        </div>
+    </PageLayout>
+</BaseLayout>

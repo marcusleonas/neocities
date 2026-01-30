@@ -1,0 +1,63 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageLayout from "../../layouts/PageLayout.astro";
+
+const mybuttons = ["https://file.garden/aXdBx1DU1BidR1It/madewithastro.png"];
+
+const buttons = [
+    "https://file.garden/aXdBx1DU1BidR1It/smile.png",
+    "https://file.garden/aXdBx1DU1BidR1It/roly-saynotoweb3.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/firefox.jpg",
+    "https://file.garden/aXdBx1DU1BidR1It/made_with_windows.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/lol.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/nowar.png",
+    "https://file.garden/aXdBx1DU1BidR1It/vscodium100.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/crawtterly-fuck-terfs.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/hatemac.jpg",
+    "https://file.garden/aXdBx1DU1BidR1It/dontfeedai.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/Censor_PGc.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/rainbow_bev.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/learn_html.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/antinazi.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/train.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/anythingbut.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/cheezit.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/weedpizzatoebeans_now_edit.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/nft.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/the%20void.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/hell0.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/ao3gif.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/thoughts_about_stuff.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/got_html.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/brolove.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/bollocks_now_95.gif",
+    "https://file.garden/aXdBx1DU1BidR1It/aiPG3Ig.png",
+    "https://file.garden/aXdBx1DU1BidR1It/gaypride.gif",
+];
+---
+
+<BaseLayout title="buttons">
+    <PageLayout>
+        <a href="/trinkets">&larr; go back</a>
+        <h1>Buttons</h1>
+        <p>
+            Below is my collection of buttons! Most of them are from tumblr or
+            other neocities sites. Feel free to steal! Theres approx 50 last I
+            checked.
+        </p>
+
+        <hr />
+
+        <h2>buttons i created</h2>
+        <div class="buttons" style="max-height: none;">
+            {mybuttons.map((button) => <img src={button} width="88" />)}
+        </div>
+
+        <hr />
+
+        <h2>buttons i stole *AHEM* borrowed.</h2>
+        <div class="buttons" style="max-height: none;">
+            {buttons.map((button) => <img src={button} width="88" />)}
+        </div>
+    </PageLayout>
+</BaseLayout>
