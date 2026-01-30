@@ -1,0 +1,335 @@
+/* Font import */
+@font-face {
+    font-family: Silkscreen;
+    src: url(./fonts/slkscr.ttf);
+}
+
+:root {
+    --green: #a4ac86;
+    --dark-green: #414833;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    width: 600px;
+    height: 250px;
+    font-family: Silkscreen, monospace;
+    color: white;
+    background: url("/images/bark.jpg");
+    margin: 5px;
+}
+
+select {
+    margin-right: 1px;
+}
+
+button {
+    padding: 2px;
+    margin-right: 1px;
+    font-family: Silkscreen, monospace;
+
+    background: var(--green);
+    border: outset 2px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px 0px var(--dark-green);
+}
+
+button:active {
+    background: var(--green);
+    border: inset 2px var(--dark-green);
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+.toggle-button[state="off"] > p::before {
+    content: url(./images/green-light-off.gif);
+    margin-right: 3px;
+}
+
+.toggle-button[state="on"] > p::before {
+    content: url(./images/green-light-on.gif);
+    margin-right: 3px;
+}
+
+select {
+    font-family: Silkscreen, monospace;
+
+    background: var(--green);
+    border: outset 2px var(--dark-green);
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px 0px var(--dark-green);
+}
+
+select:active {
+    background: var(--green);
+    border: inset 2px var(--dark-green);
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+/* Blink class */
+.blink {
+    animation: blinker 2s step-start infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Columns section */
+.columns {
+    display: flex;
+}
+
+.columns > div:first-child {
+    flex-shrink: 0;
+    margin-right: 5px;
+}
+
+.columns > div:last-child {
+    flex-grow: 1;
+}
+
+/* -- Sliders -- */
+input[type="range"] {
+    appearance: none;
+    background: none;
+    border: inset 2px var(--green);
+}
+
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track
+
+/* For Chrome */ {
+    background-color: var(--dark-green);
+    height: 100%;
+}
+
+input[type="range"]::-moz-range-track
+
+/* For Firefox */ {
+    background-color: #201e3a;
+    height: 100%;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb
+
+/* For Chrome */ {
+    appearance: none;
+
+    background: var(--green);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: outset 2px var(--dark-green);
+
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px 0px var(--dark-green);
+
+    height: 1rem;
+    width: 2.5rem;
+}
+
+input[type="range"]::-webkit-slider-thumb:active
+
+/* For Chrome */ {
+    background: var(--green);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: inset 2px var(--dark-green);
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+input[type="range"]::-moz-range-thumb
+
+/* For Firefox */ {
+    background: var(--green);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: outset 2px var(--dark-green);
+
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px 0px var(--dark-green);
+
+    height: 1rem;
+    width: 2.5rem;
+}
+
+input[type="range"]::-moz-range-thumb:active
+
+/* For Firefox */ {
+    background: var(--green);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: inset 2px var(--dark-green);
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+/* ---- Web Deck Player ---- */
+#web-deck-player {
+    padding: 0 5px;
+}
+
+/* Player title bar */
+#player-title-bar {
+    display: flex;
+}
+
+#player-title-bar:before,
+#player-title-bar:after {
+    content: "";
+    flex: 1;
+    margin: auto 1em;
+    height: 2px;
+    border-top: ridge var(--green) 2px;
+    border-bottom: ridge var(--green) 2px;
+}
+
+/* Player body */
+#player-body {
+    padding: 5px;
+    border: none;
+}
+
+/* Player main section */
+#player-main-section {
+    margin-bottom: 5px;
+}
+
+/* Player display */
+#player-display {
+    width: 250px;
+    height: 140px;
+    background: black;
+    border: none;
+}
+
+/* Player info */
+#info-screen {
+    background: black;
+    color: var(--green);
+    border: none;
+    margin-bottom: 5px;
+}
+
+#songLabel {
+    text-shadow:
+        0 0 10px var(--green),
+        0 0 20px var(--green),
+        2px 2px 2px rgba(206, 89, 55, 0);
+}
+
+#statusLabel {
+    text-shadow:
+        0 0 10px var(--green),
+        0 0 20px var(--green),
+        2px 2px 2px rgba(206, 89, 55, 0);
+}
+
+.player-row {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#volumeButton {
+    height: 25px;
+    width: 25px;
+}
+
+#volumeButton img {
+    height: 100%;
+}
+
+#volumeBar {
+    width: 120px;
+}
+
+#themeSelector {
+    height: 25px;
+    max-width: 150px;
+    text-overflow: ellipsis;
+}
+
+#videoButton {
+    height: 25px;
+}
+
+#playerLogo {
+    text-align: center;
+    height: fit-content;
+}
+
+#playerLogo > img {
+    margin-top: 5px;
+    max-height: 50px;
+}
+
+/* Player control panel */
+#player-control-panel {
+    font-size: 0;
+}
+
+#seekBar {
+    width: 99%;
+    margin-bottom: 5px;
+}
+
+.playing-controls {
+    margin-bottom: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    width: fit-content;
+    background: #201e3a;
+    border: none;
+    vertical-align: middle;
+}
+
+.playing-controls[rounded] {
+    border-radius: 20px;
+}
+
+.playing-controls[float-right] {
+    float: right;
+}
+
+.playing-controls button {
+    height: 30px;
+    min-width: 50px;
+}
+
+.playing-controls button img {
+    height: 100%;
+}
+
+#infoButton {
+    border-radius: 20px;
+    height: 30px;
+    min-width: 30px;
+    font-size: large;
+}
+
+#playlistSelector {
+    height: 30px;
+    max-width: 175px;
+    text-overflow: ellipsis;
+}
