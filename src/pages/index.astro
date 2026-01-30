@@ -7,50 +7,134 @@ const imgs = images.slice(0, 3);
 ---
 
 <BaseLayout title="welcome">
-	<PageLayout>
-		<h2>Welcome to The Forest!</h2>
+    <PageLayout>
+        <h2>Welcome to The Forest!</h2>
 
-		<div>
-			<p>
-				Hello and welcome! I made this site to have a home for some
-				ramblings and other stuff & a place to express myself online! I
-				apologise in advance for the dump of info T-T
-			</p>
-			<p>
-				Most images on this website are slightly edited by me, but
-				originally sourced from pixabay, other than the wood texture
-				which I got from ambientcg.
-			</p>
-			<p>
-				<em>P.s. no trees were harmed in the making of this site.</em>
-			</p>
-		</div>
-		<div>
-			<h2>Socials</h2>
-			<p>
-				Want to be my pen-pal? Send me an email: <a
-					href="mailto:wishbone@posteo.uk">wishbone@posteo.uk</a
-				>
-			</p>
-			<p>
-				View all my links here: <a href="https://wishbxnes.carrd.co"
-					>wishbxnes.carrd.co</a>
-			</p>
-		</div>
-		<div>
-			<h2>Latest Pictures</h2>
-			<div class="gallery">
-				{imgs.map((image) => <img src={image.src} alt={image.alt} />)}
-			</div>
-		</div>
-		<div>
-			<h2>My Pets</h2>
-			<iframe
-				width="314"
-				height="321"
-				scrolling="no"
-				src="https://gifypet.neocities.org/pet/pet.html?name=Cookie&dob=1769540722&gender=f&element=Water&pet=https%3A%2F%2Ffile.garden%2FaXdBx1DU1BidR1It%2Fcookie.png&map=hills.jpg&background=https%3A%2F%2Fn3bulaxo.neocities.org%2Fimages%2Fbark.jpg&tablecolor=white&textcolor=white"
-				frameborder="0"></iframe>
-		</div>
-	</PageLayout>
+        <div>
+            <div style="float:right;padding-left: 5px;">
+                <form method="post" action="https://poll.pollcode.com/84189247">
+                    <div
+                        style="background-color:#414833;padding:2px;width: 175px;font-size:12px;padding:5px;"
+                    >
+                        <div style="padding:2px 0px 4px 2px;">
+                            <p>
+                                You can only take one item into the forest. What
+                                do you take?
+                            </p>
+                        </div><input
+                            type="radio"
+                            name="answer"
+                            value="1"
+                            id="answer841892471"
+                            style="float:left;"
+                        /><label
+                            for="answer841892471"
+                            style="float:left;width:150px;"
+                            >A sturdy iron lantern</label
+                        ><div style="clear:both;height:2px;"></div><input
+                            type="radio"
+                            name="answer"
+                            value="2"
+                            id="answer841892472"
+                            style="float:left;"
+                        /><label
+                            for="answer841892472"
+                            style="float:left;width:150px;"
+                            >A leather-bound map</label
+                        ><div style="clear:both;height:2px;"></div><input
+                            type="radio"
+                            name="answer"
+                            value="3"
+                            id="answer841892473"
+                            style="float:left;"
+                        /><label
+                            for="answer841892473"
+                            style="float:left;width:150px;"
+                            >A sharp pocket-knife</label
+                        ><div style="clear:both;height:2px;"></div><input
+                            type="radio"
+                            name="answer"
+                            value="4"
+                            id="answer841892474"
+                            style="float:left;"
+                        /><label
+                            for="answer841892474"
+                            style="float:left;width:150px;"
+                            >A warm wooly blanket</label
+                        ><div style="clear:both;height:2px;"></div><input
+                            type="radio"
+                            name="answer"
+                            value="5"
+                            id="answer841892475"
+                            style="float:left;"
+                        /><label
+                            for="answer841892475"
+                            style="float:left;width:150px;"
+                            >A bunch of snacks</label
+                        ><div style="clear:both;height:2px;"></div><input
+                            type="radio"
+                            name="answer"
+                            value="6"
+                            id="answer841892476"
+                            style="float:left;"
+                        /><label
+                            for="answer841892476"
+                            style="float:left;width:150px;"
+                            >Something else (let me know in the chat!)</label
+                        ><div style="clear:both;height:2px;"></div><div
+                            align="center"
+                            style="padding:3px;"
+                        >
+                            <input type="submit" value=" Vote " />&nbsp;<input
+                                type="submit"
+                                name="view"
+                                value=" View "
+                            />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <p>
+                Hello and welcome! I made this site to have a home for some
+                ramblings and other stuff & a place to express myself online! I
+                apologise in advance for the dump of info T-T
+            </p>
+            <p>
+                Most images on this website are slightly edited by me, but
+                originally sourced from pixabay, other than the wood texture
+                which I got from ambientcg.
+            </p>
+            <p>
+                <em>P.s. no trees were harmed in the making of this site.</em>
+            </p>
+        </div>
+        <div>
+            <h2>Socials</h2>
+            <p>
+                Want to be my pen-pal? Send me an email: <a
+                    href="mailto:wishbone@posteo.uk">wishbone@posteo.uk</a
+                >
+            </p>
+            <p>
+                View all my links here: <a href="https://wishbxnes.carrd.co"
+                    >wishbxnes.carrd.co</a
+                >
+            </p>
+        </div>
+        <div>
+            <h2>Latest Pictures</h2>
+            <div class="gallery">
+                {imgs.map((image) => <img src={image.src} alt={image.alt} />)}
+            </div>
+        </div>
+        <div>
+            <h2>My Pets</h2>
+            <iframe
+                width="314"
+                height="321"
+                scrolling="no"
+                src="https://gifypet.neocities.org/pet/pet.html?name=Cookie&dob=1769540722&gender=f&element=Water&pet=https%3A%2F%2Ffile.garden%2FaXdBx1DU1BidR1It%2Fcookie.png&map=hills.jpg&background=https%3A%2F%2Fn3bulaxo.neocities.org%2Fimages%2Fbark.jpg&tablecolor=white&textcolor=white"
+                frameborder="0"></iframe>
+        </div>
+    </PageLayout>
 </BaseLayout>
