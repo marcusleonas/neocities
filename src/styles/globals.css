@@ -9,6 +9,8 @@
 
 html {
     font-size: 16px;
+    scrollbar-width: 5px;
+    scrollbar-color: var(--green);
 }
 
 body {
@@ -37,7 +39,8 @@ h6 {
     font-family: "Mystery Quest", system-ui;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar,
+::-moz- {
     width: 5px;
 }
 
