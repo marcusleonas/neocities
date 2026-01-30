@@ -48,6 +48,6 @@ export const buttons: Button[] = [
     {
         src: "https://file.garden/aXdBx1DU1BidR1It/btn.gif",
         href: "https://404city.neocities.org",
-        category: "liked",
+        category: "neighbour",
     },
 ];
