@@ -40,4 +40,9 @@ export const buttons: Button[] = [
         href: "https://makoenergy.neocities.org",
         category: "liked",
     },
+    {
+        src: "https://88x31.kate.pet/aseprite.png",
+        href: "https://aseprite.org/",
+        category: "liked",
+    },
 ];
