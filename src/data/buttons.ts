@@ -60,4 +60,9 @@ export const buttons: Button[] = [
         href: "https://sakuradreams.neocities.org",
         category: "liked",
     },
+    {
+        src: "https://file.garden/aXdBx1DU1BidR1It/absolute-realm.gif",
+        href: "https://theabsoluterealm.com",
+        category: "liked",
+    },
 ];
