@@ -232,7 +232,8 @@ td.interest-title {
     right: 0;
 }
 
-.fanlistings {
+.fanlistings,
+.cliques {
     display: flex;
     flex-direction: row;
     gap: 2px;
