@@ -1,0 +1,97 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+import { buttons } from "../data/buttons";
+
+const neighbours = buttons.filter((item) => {
+    return item.category === "neighbour";
+});
+const liked = buttons.filter((item) => {
+    return item.category === "liked";
+});
+const inactive = buttons.filter((item) => {
+    return item.category === "inactive";
+});
+---
+
+<BaseLayout title="links">
+    <PageLayout>
+        <h1>Links</h1>
+        <p>Clicking on a button will open the website in a new tab.</p>
+
+        <p>
+            Add my button (hotlinking ok)! Let me know if you added me and I'll
+            return the favour!
+        </p>
+        <img src="https://file.garden/aXdBx1DU1BidR1It/forest_88x31.gif" />
+        <textarea readonly>
+            {
+                `<a href="https://n3bulaxo.neocities.org"><img src="https://file.garden/aXdBx1DU1BidR1It/forest_88x31.gif" /></a>`
+            }
+        </textarea>
+
+        <hr />
+
+        <h2>Neighbours</h2>
+        <p>My neighbours!</p>
+        <div class="buttons">
+            {
+                neighbours.map((button) => {
+                    if (button.href) {
+                        return (
+                            <a href={button.href}>
+                                <img src={button.src} />
+                            </a>
+                        );
+                    } else {
+                        return <img src={button.src} />;
+                    }
+                })
+            }
+        </div>
+
+        <hr />
+
+        <h2>Sites I Like</h2>
+        <p>Other sites I like but aren't neighbours with.</p>
+        <div class="buttons">
+            {
+                liked.length > 0 &&
+                    liked.map((button) => {
+                        if (button.href) {
+                            return (
+                                <a href={button.href}>
+                                    <img src={button.src} />
+                                </a>
+                            );
+                        } else {
+                            return <img src={button.src} />;
+                        }
+                    })
+            }
+            {liked.length < 1 && <p>None.</p>}
+        </div>
+
+        <hr />
+
+        <h2>Inactive</h2>
+        <p>Sites that are inactive rn.</p>
+        <div class="buttons">
+            {
+                inactive.length > 0 &&
+                    liked.map((button) => {
+                        if (button.href) {
+                            return (
+                                <a href={button.href}>
+                                    <img src={button.src} />
+                                </a>
+                            );
+                        } else {
+                            return <img src={button.src} />;
+                        }
+                    })
+            }
+            {inactive.length < 1 && <p>None.</p>}
+        </div>
+    </PageLayout>
+</BaseLayout>

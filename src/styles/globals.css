@@ -156,13 +156,15 @@ header h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10px;
-
-    justify-content: center;
-    align-items: center;
+    gap: 5px;
 
     max-height: 300px;
     overflow-y: auto;
+
+    margin-top: 5px;
+
+    padding: 10px;
+    background-color: var(--dark-green);
 }
 
 .buttons a {
@@ -172,14 +174,6 @@ header h1 {
 
 .buttons a:hover {
     text-decoration: none;
-}
-
-.buttons img {
-    transition: 0.2s;
-}
-
-.buttons img:hover {
-    scale: 1.2;
 }
 
 .posts {

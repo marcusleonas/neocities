@@ -61,36 +61,6 @@ import { buttons } from "../data/buttons";
                     type="text/javascript"
                     src="https://counter.websiteout.com/js/5/0/915/1"></script>
             </div>
-            <hr />
-            <div>
-                <h3>Buttons</h3>
-                <div class="buttons">
-                    {
-                        buttons.map((button) => {
-                            if (button.href) {
-                                return (
-                                    <a href={button.href}>
-                                        <img src={button.src} />
-                                    </a>
-                                );
-                            } else {
-                                return <img src={button.src} />;
-                            }
-                        })
-                    }
-                </div>
-                <p>Add my button (hotlinking ok)!</p>
-                <a href="https://n3bulaxo.neocities.org"
-                    ><img
-                        src="https://file.garden/aXdBx1DU1BidR1It/forest_88x31.gif"
-                    />
-                </a>
-                <textarea style="width:100%;" readonly>
-                    {
-                        `<a href="https://n3bulaxo.neocities.org"><img src="https://file.garden/aXdBx1DU1BidR1It/forest_88x31.gif" /></a>`
-                    }
-                </textarea>
-            </div>
         </aside>
     </div>
 </div>

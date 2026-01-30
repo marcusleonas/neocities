@@ -1,35 +1,18 @@
-interface Button { src: string; href?: string };
+interface Button {
+    src: string;
+    href?: string;
+    category: "neighbour" | "liked" | "inactive";
+}
 
 export const buttons: Button[] = [
     {
-        src: "/images/buttons/gay.png",
-    },
-    {
         src: "https://file.garden/aXdBx1DU1BidR1It/conehead%20webring%20found%20heaven%2088x31.png",
         href: "https://coneheads.netlify.app",
-    },
-    {
-        src: "https://file.garden/aXdBx1DU1BidR1It/conehead%20webring%20superache%2088x31.png",
-        href: "https://coneheads.netlify.app",
-    },
-    {
-        src: "https://file.garden/aXdBx1DU1BidR1It/conehead%20webring%2088x31.png",
-        href: "https://coneheads.netlify.app",
-    },
-    {
-        src: "https://lazer-bunny.neocities.org/Art_Storage/Pixel_Art/Button_88x31.gif",
-        href: "https://lazer-bunny.neocities.org",
-    },
-    {
-        src: "https://file.garden/aNYsXwv8qTXml6YP/playpenz%20button.png",
-        href: "https://playpenz.party",
-    },
-    {
-        src: "/images/buttons/cozyghosty25.png",
-        href: "https://cozyghostly.neocities.org/link",
+        category: "neighbour",
     },
     {
         src: "https://file.garden/ZrZSgsrYfQXsO7QH/buttons/lockheartlove_button.png",
         href: "http://lockheart.love",
+        category: "neighbour",
     },
-]
+];
