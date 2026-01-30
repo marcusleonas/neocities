@@ -37,13 +37,7 @@ h6 {
     font-family: "Mystery Quest", system-ui;
 }
 
-* {
-    scrollbar-width: 5px;
-    scrollbar-color: var(--green);
-}
-
-::-webkit-scrollbar,
-::-moz- {
+::-webkit-scrollbar {
     width: 5px;
 }
 
