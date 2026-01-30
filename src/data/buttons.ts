@@ -50,4 +50,9 @@ export const buttons: Button[] = [
         href: "https://404city.neocities.org",
         category: "neighbour",
     },
+    {
+        src: "https://file.garden/aXdBx1DU1BidR1It/rhinedottir_button.png",
+        href: "https://rhinedottir.neocities.org",
+        category: "neighbour",
+    },
 ];
