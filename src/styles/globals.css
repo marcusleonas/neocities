@@ -209,7 +209,8 @@ td.interest-title {
 }
 
 .webrings,
-.updates {
+.updates,
+.cliques {
     max-height: 200px;
     overflow-y: auto;
 }
@@ -232,7 +233,6 @@ td.interest-title {
     right: 0;
 }
 
-.cliques,
 .fanlistings {
     display: flex;
     flex-direction: row;
