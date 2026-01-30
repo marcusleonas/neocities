@@ -55,4 +55,9 @@ export const buttons: Button[] = [
         href: "https://rhinedottir.neocities.org",
         category: "neighbour",
     },
+    {
+        src: "https://file.garden/aXdBx1DU1BidR1It/SakuraDreams01.gif",
+        href: "https://sakuradreams.neocities.org",
+        category: "liked",
+    },
 ];
