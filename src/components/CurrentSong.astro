@@ -6,7 +6,7 @@ const { username, apiKey } = Astro.props;
     <div id="track-card" class="track-card hidden">
         <img id="track-art" src="" alt="Album Art" />
         <div class="track-info">
-            <p id="status-text" class="status"></p>
+            <p>Listened To:</p>
             <a id="track-link" href="#" target="_blank">
                 <strong id="track-title"></strong>
             </a>
@@ -16,18 +16,17 @@ const { username, apiKey } = Astro.props;
     <div id="loading-state">Loading tunes...</div>
 </div>
 
-<script define:vars={{ username, apiKey }}>
+<script>
     async function updateLastFm() {
-        const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json&limit=1`;
+        const url = `https://lastfm-last-played.biancarosa.com.br/marcusleonas/latest-song`;
 
         try {
             const response = await fetch(url);
             const data = await response.json();
-            const track = data.recenttracks.track[0];
-
+            const track = data.track;
             if (!track) return;
 
-            const isPlaying = track["@attr"]?.nowplaying === "true";
+            console.log(data);
 
             // Update DOM elements
             document.getElementById("track-art").src =
@@ -36,9 +35,6 @@ const { username, apiKey } = Astro.props;
             document.getElementById("track-artist").innerText =
                 track.artist["#text"];
             document.getElementById("track-link").href = track.url;
-            document.getElementById("status-text").innerText = isPlaying
-                ? "Currently Playing"
-                : "Last Listened To";
 
             // Show card, hide loading
             document.getElementById("track-card").classList.remove("hidden");
