@@ -45,4 +45,9 @@ export const buttons: Button[] = [
         href: "https://aseprite.org/",
         category: "liked",
     },
+    {
+        src: "https://file.garden/aXdBx1DU1BidR1It/btn.gif",
+        href: "https://404city.neocities.org",
+        category: "liked",
+    },
 ];
