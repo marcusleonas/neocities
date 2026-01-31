@@ -1,67 +1,7 @@
----
-const { username, apiKey } = Astro.props;
----
-
-<div id="last-fm-widget" class="last-fm-container">
-    <div id="track-card" class="track-card hidden">
-        <img id="track-art" src="" alt="Album Art" />
-        <div class="track-info">
-            <p>Last Listened To:</p>
-            <a id="track-link" href="#" target="_blank">
-                <strong id="track-title"></strong>
-            </a>
-            <span id="track-artist"></span>
-        </div>
-    </div>
-    <div id="loading-state">Loading...</div>
-</div>
-
-<script>
-    async function updateLastFm() {
-        const url = `https://lastfm-last-played.biancarosa.com.br/marcusleonas/latest-song`;
-
-        try {
-            const response = await fetch(url);
-            const data = await response.json();
-            const track = data.track;
-            if (!track) return;
-
-            console.log(data);
-
-            // Update DOM elements
-            document.getElementById("track-art").src =
-                track.image[2]["#text"] || "placeholder.png";
-            document.getElementById("track-title").innerText = track.name;
-            document.getElementById("track-artist").innerText =
-                track.artist["#text"];
-            document.getElementById("track-link").href = track.url;
-
-            // Show card, hide loading
-            document.getElementById("track-card").classList.remove("hidden");
-            document.getElementById("loading-state").classList.add("hidden");
-        } catch (error) {
-            console.error("Last.fm error:", error);
-            document.getElementById("loading-state").innerText =
-                "Couldn't load music :(";
-        }
-    }
-
-    // Run on load
-    updateLastFm();
-</script>
-
-<style>
-    .hidden {
-        display: none;
-    }
-    .track-card {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }
-    #track-art {
-        width: 70px;
-        height: 70px;
-        aspect-ratio: 1/1;
-    }
-</style>
+<p align="center">
+    <a href="https://github.com/kittinan/spotify-github-profile">
+        <img
+            src="https://spotify-github-profile.kittinanx.com/api/view?uid=5lvrfpzfb1xyoece6w9vyea9n&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&profanity=false&bar_color=4392bc&bar_color_cover=true"
+        />
+    </a>
+</p>
