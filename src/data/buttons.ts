@@ -58,11 +58,26 @@ export const buttons: Button[] = [
     {
         src: "https://file.garden/aXdBx1DU1BidR1It/SakuraDreams01.gif",
         href: "https://sakuradreams.neocities.org",
-        category: "liked",
+        category: "neighbour",
     },
     {
         src: "https://file.garden/aXdBx1DU1BidR1It/absolute-realm.gif",
         href: "https://theabsoluterealm.com",
         category: "liked",
+    },
+    {
+        src: "https://file.garden/aXdBx1DU1BidR1It/ninjawebgif.gif",
+        href: "https://ninjaweb.neocities.org/",
+        category: "neighbour",
+    },
+    {
+        src: "https://file.garden/aXdBx1DU1BidR1It/velvetblue.gif",
+        href: "https://velvetblue.neocities.org",
+        category: "neighbour",
+    },
+    {
+        src: "https://file.garden/aXdBx1DU1BidR1It/md67bd.png",
+        href: "https://bachira.neocities.org/",
+        category: "neighbour",
     },
 ];
