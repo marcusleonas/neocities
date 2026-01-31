@@ -255,6 +255,30 @@ td.interest-title {
     background: var(--brown);
 }
 
+.storybook {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    background: url("https://file.garden/aXdBx1DU1BidR1It/book_cover.png");
+    background-size: 150px 100%;
+    width: 150px;
+    height: 210px;
+    padding: 60px 20px 20px 25px;
+    text-align: center;
+}
+
+.storybook p {
+    padding-bottom: 10px;
+}
+
+.storybook img {
+    width: 125px;
+}
+
+.storybook a:hover img {
+    rotate: -5deg;
+}
+
 @media screen and (max-width: 900px) {
     .wrapper {
         max-width: none;
