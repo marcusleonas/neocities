@@ -1,4 +1,7 @@
-interface GalleryImage { src: string; alt: string };
+interface GalleryImage {
+    src: string;
+    alt: string;
+}
 
 export const rawImages: GalleryImage[] = [
     {
@@ -26,25 +29,24 @@ export const rawImages: GalleryImage[] = [
         alt: "our tuxedo cat, cookie",
     },
     {
-        src: "https://file.garden/aXdBx1DU1BidR1It/cookie%20in%20grass.jpg",
+        src: "https://file.garden/aXdBx1DU1BidR1It/cookie%20in%20grass(1).jpg",
         alt: "tuxedo cat, cookie, hiding in the grass",
     },
-
 ];
 export const images = rawImages.reverse();
 
 const rawArt: GalleryImage[] = [
     {
         src: "https://file.garden/aXdBx1DU1BidR1It/CG%20Wishbone%20Poster.png",
-        alt: "Conan Gray - Wishbone Poster"
+        alt: "Conan Gray - Wishbone Poster",
     },
     {
         src: "https://file.garden/aXdBx1DU1BidR1It/Charli%20XCX%20Brat%20Poster.png",
-        alt: "Charli XCX - Brat Poster"
+        alt: "Charli XCX - Brat Poster",
     },
     {
         src: "https://file.garden/aXdBx1DU1BidR1It/CG%20Superache%20Poster.png",
-        alt: "Conan Gray - Superache Poster"
+        alt: "Conan Gray - Superache Poster",
     },
 ];
 export const art = rawArt.reverse();
