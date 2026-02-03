@@ -48,5 +48,13 @@ const rawArt: GalleryImage[] = [
         src: "https://file.garden/aXdBx1DU1BidR1It/CG%20Superache%20Poster.png",
         alt: "Conan Gray - Superache Poster",
     },
+    {
+        src: "https://file.garden/aXdBx1DU1BidR1It/So%20Tired%20All%20The%20Time.png",
+        alt: "So Tired All The Time",
+    },
+    {
+        src: "https://file.garden/aXdBx1DU1BidR1It/FontsFontsFonts.png",
+        alt: "Fonts! Fonts! Fonts!",
+    },
 ];
 export const art = rawArt.reverse();
